@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Q3-Project 1</title>
@@ -20,21 +29,21 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm He cen col-sm-12">
-		<div class="container-fluid">
-		    <a class="navbar-brand col-sm-4" href=""><img src="https://i.ibb.co/NnvBgHh/Bites-removebg-preview.png" alt="logo"  class="d-inline-block align-top nega"></a>
+		<div class="container">
+		    <a class="navbar-brand col-sm-4 font2" href="" style="text-align: left;"><img src="logo.png" alt="logo"  class="limg d-inline-block align-top nega"></a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
 		    	<span class="navbar-toggler-icon"></span>
 		    </button>
 
 		    <div class="collapse navbar-collapse col-sm-4" id="collapsibleNavbar">
-		    	 <ul class="nav nav-tabs mx-auto" role="tablist">
-		       		<li class="nav-item mx-auto">
-	   							<a class="nav-link" href="index.html" >Home</a>
+		    	 <ul class="nav nav-pills mx-auto" role="tablist">
+		       		<li class="nav-item mx-2">
+	   					<a class="nav-link" href="index.html" style="background-color: #E0D6BC !important; border-radius: 30px;">Home</a>
 	      			</li>
-		       		<li class="nav-item mx-auto">
-		         			 <a class="nav-link" href="schedule.html" >Transit Schedule</a>
+		       		<li class="nav-item mx-2">
+		         		<a class="nav-link" href="schedule.html" >Transit Schedule</a>
 		        	</li>  
-		       		<li class="nav-item mx-auto">
+		       		<li class="nav-item mx-2">
 		          		<a class="nav-link" href="Contact.html">Contact Us</a>
 		       	 	</li>
 		      	</ul>
@@ -42,28 +51,26 @@
 
 		    <div class="wrapper sc col-sm-4" >
 					<form action="/search" method="get">
-			    	<input type="search"  placeholder="Search.." name="query">
-			      <button type="submit">Submit</button>
+			    	<input type="search"  class="search" placeholder="Search .." name="query">
+			      <button type="submit" class="sub">Submit</button>
 			    </form>
 	  		</div>
 	  	</div>
 	</nav>
-	<br /><br /><br />
-	
-	<div class="row">
-			<h1 class="Fancy"> Ticketing Center! </h1>
-			<hr /> <br />
-			<div class="Personal col-sm-4">
-			   <a href="https://ibb.co/ch4BHttx"><img src="https://i.ibb.co/xqxk0GG3/map.png" alt="map" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>forum image hosting</a><br />
+	<br><h1 class="font1">TICKETING CENTER</h1><br>
+
+	<div class="row container mx-auto">
+
+			<div class="Personal col-sm-3 column column_1">
+			   <a href="https://ibb.co/ch4BHttx"><img src="map.png" alt="map" border="0"></a><br /><br><br><a target='_blank' href='https://imgbb.com/' class="sa font2">forum image hosting</a><br />
 			</div>
 
-			<div class="Ticket col-sm-4">
+			<div class="Ticket col-sm-6 column">
+
 				<details> 
-				   <summary>Ticket Price</summary>
-				   <em> Choose your ticket price </em>
-				   <hr />
+				   <summary class="font2">Ticket Price</summary><br>
 				   <form action="" placeholder="Seats">
-				   		<label> Leaving From: </label>
+				   		<label class="font"> Leaving From: </label>
 					    <select name="from" id="from" class="col-sm-12 form-control">
 		 			    	<option disabled="true" selected="true" class="cen"> Locations </option>
 		   				   	<option value="Roosevelt">Roosevelt</option>
@@ -87,7 +94,7 @@
 		    				<option value="Baclaran">Baclaran</option>
 	  					</select>
 	  					<br />
-	  					<label> Going to: </label>
+	  					<label class="font2"> Going to: </label>
 					    <select name="to" id="to" class="col-sm-12 form-control">
 		 			    	<option disabled="true" selected="true" class="cen"> Going to </option>
 		   				   	<option value="Roosevelt">Roosevelt</option>
@@ -120,20 +127,32 @@
 	  					</select>
  				   </form>
 				    <br />
-				    <button type="button" id="forprice" onclick="Price()"class="col-auto btn btn-warning btn-md"onmouseover="mouseOver()" onmouseout="mouseOut()"> Check Price </button>
+				    <button type="button" id="forprice" onclick="Price()"class="col-auto btn btn-md"onmouseover="mouseOver()" onmouseout="mouseOut()"> Check Price </button>
+				    <button type="button" id="forrefresh" onclick="refreshPage()"class="col-auto btn btn-md"onmouseover="mouseOver2()" onmouseout="mouseOut2()"> Submit another form</button>
 				    <br /> <br />
 				</details>
 			</div>
 
-			<div class="Personal col-sm-4">
-				<h1> Your Price is: </h1>
-					<h3 id="price"> <i> Please buy a ticket</i></h3> 
+			<div class="Personal col-sm-2">
+				<div class="tkprc">
+					<h1 class="font1" style="font-size: 40px !important; color:#F2F1EB;">Price : </h1>
+				</div>
+				<div class="column_2">
+					<div class="tkprco">
+						<h6 id="price" class="font2">Please buy a ticket</h6> 
+					</div>
+				</div>
+
+				<div class="sa">
+					<img src="trainticket.png" style="width: 150px; border-radius: 0 !important;">
+				</div>
+
 			</div>
 		</div>	
 
 	<br /><br /><br /><br />
 	<div class="footer">
-	<a href="https://github.com/AEnriquez-9-Topaz "> <p> <i> 2025 | Alejandro Enriquez & Ivy Zosa | 9-Topaz </i> </p> </a>
+	<a href="https://github.com/AEnriquez-9-Topaz" class="footertext font2"> <p> <i> 2025 | Alejandro Enriquez & Ivy Zosa | 9-Topaz </i> </p> </a>
 	</div> 
 	<script src="main.js"></script>
 </body>
