@@ -14,12 +14,75 @@ html, body {
 		  background-size: cover;
 		  height: 100%;
 		  background-repeat: repeat;
-
-.smal {
-	width: 500px;
+		  background-color: #38394D;
 }
 
-		}
+.filler {
+	background-color: #38394D;
+}
+
+.filler2 {
+	background-color: #EBEBEB;
+}
+
+.ctct input {
+	border-radius: 100px !important;
+	border: 0px !important;
+	background-color: #38394D !important;
+	color: #EBEBEB !important;
+}
+
+.ctct textarea {
+	border-radius: 100px !important;
+	border: 0px !important;
+	padding-left: 15px;
+	background-color: #38394D !important;
+	color: #EBEBEB !important;
+}
+
+.ctct ::placeholder {
+	color: #EBEBEB !important;
+}
+
+
+
+.btnb {
+	margin-right: 10%;
+	margin-left: 10%;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.smal {
+	width: 300px;
+}
+
+.spin {
+	position:fixed;
+    top:130px;
+    left:60px
+}
+
+.spin img {
+	height: 450px;
+}
+
+.row {
+	background-color: #EBEBEB;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.ca {
+	background-color: #EBEBEB !important;
+	color: #38394D !important;
+	font-family: Lexend;
+	padding: 3px;
+	border-radius: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 .Box {
 	background-color: rgb(0, 48, 73, 0.8);
 	margin: 50px;
@@ -31,51 +94,121 @@ html, body {
 
 .card {
 	padding: 20px;
+	background-color: #606171 !important;
+	color: #EBEBEB !important;
+	border-radius: 10px;
+}
+
+.btn {
+	border-radius: 100px !important;
+}
+
+.subtn {
+	background-color: #83838D !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	color: #EBEBEB !important;
+}
+
+.search {
+	border: none !important;
+	border-radius: 100px;
+}
+
+.tkprc {
+	background-color: #38394D;
+	margin-right: 10%;
+	margin-left: 10%;
+	vertical-align: middle;
+	height: 35px;
+	padding-top: 6px;
+	padding-bottom: 10px;
+	color: #EBEBEB;
+	font-family: Lexend;
+	font-weight: 300;
+	border-radius: 100px;
 }
 
 .just {
 	text-align: justify;
 	margin: 30px;
+	font-family: Lexend;
+	font-weight: 300;
+}
+
+
+hr {
+	border: none;
 }
 
 a.cemi:link { 
-	color: #F9D43B;
-	font-family: Sour Gummy;
+	color: rgb(56, 57, 77, 0.6);
+	font-family: Lexend;
+	font-weight: 100;
 }
 a.cemi:visited { 
 	color:  #F9D43B; 
-	font-family: Sour Gummy;
+	font-family: Lexend;
+	font-weight: 100;
 }
 
-.hero {
-					
+.hero {		
 	size: 100px;
 	height: 300px;
-	background-color: black;
 	text-align: center;
 	width: 100%;
-
-	}	
+	background-color: #38394D; 
+}	
 
 .heroimg {
+	display: block;
 	width: 100%;
-	object-fit: fill;
+	max-width: 1500px;
 	height: 350px;
-
+	background-color: #38394D;
+	border-radius: 10px;
 }				
+
+.bgim {
+	text-align: center;
+}
 
 .left {
 	text-align: left;
 }
 
 summary {
-	font-family: Charm;	
+	font-family: Lexend;
+	background-color: #38394D;
+	color: #EBEBEB !important;
+	padding: 3px;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-radius: 30px;
 }
 
 .He {
 	padding-bottom: 10px;
 	vertical-align: middle;
-	background-color: #DC901E;
+	background-color: #ebebeb;
+	max-height: 90px;
+}
+
+.nav-item {
+	border-radius: 90px;
+	border-bottom: none !important;
+	margin: 5px 10px;
+	margin: 0 10px;
+}
+
+.nav-item a {
+	color: #242424 !important;
+	font-family: "Lexend";
+}
+
+.nav-tabs .nav-link {
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .Fancy {
@@ -84,8 +217,53 @@ summary {
 }
 
 .nega {
+	width: 60px;
+}
 
-	width: 85px;
+.dtl {
+	padding-left: 80px;
+    padding-right: 80px;
+}
+
+.sm2 {
+	background-color: #EBEBEB;
+	color: #38394D !important;
+}
+
+.fortablehead {
+	margin-right: 24% !important;
+	margin-left:24% !important;
+	max-width: 800px !important;
+	padding: 10px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: #83838D;
+}
+
+.fortablebody {
+	margin-right: 24% !important;
+	margin-left:24% !important;
+	max-width: 800px !important;
+	padding: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: #EBEBEB;
+}
+
+.h {
+	color: #83838D;
+}
+
+.ticketbuy {
+	min-height: calc(100vh - 135px);
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    margin-left: auto;
+    margin-right: 0;
+    width: 40%;
+    background-color: #EBEBEB;
+    padding: 20px;
 }
 
 .footer {
@@ -95,15 +273,17 @@ summary {
 	position: fixed;
 	width: 100%;
 	text-align: center;
-	background-color: #DC901E;
+	background-color: rgb(56, 57, 77, 0.8) !important;
 	color: ghostwhite;
 	height: 45px;
 
 }
 
+
 img {
 	width: 100%;
 	height: auto;
+	border-radius: 10px;
 }
 .Personal {
 	justify-content: center;
@@ -115,7 +295,7 @@ img {
 }
 
 h1 {
-	font-family: Sour Gummy;
+	font-family: Lexend;
 }
 
 h3 {
@@ -127,10 +307,9 @@ h3 {
 
 .row {
 	justify-content: space-evenly;
-
+	padding-left: 80px;
+	padding-right: 80px;
 }
-
-
 
 
 .footer {
