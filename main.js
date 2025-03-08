@@ -4,14 +4,40 @@ function Personal (a, b) {
 					}
 
 					function mouseOver(){
-						buy.style.background = "#C1121F";
-						buy.sytle.color = "ghostwhite"
+						forprice.style.background = "#38394D";
+						forprice.style.color = "ghostwhite"
 
 					}
 
 					function mouseOut(){
-						buy.style.background = "#FFB703"
-						buy.style.color = "black"
+						forprice.style.background = "#6D6E7A"
+						forprice.style.color = "ghostwhite"
+					}
+
+					function mouseOver2(){
+						forrefresh.style.background = "#38394D";
+						forrefresh.style.color = "ghostwhite"
+
+					}
+
+					function mouseOut2(){
+						forrefresh.style.background = "#6D6E7A"
+						forrefresh.style.color = "ghostwhite"
+					}
+
+					function mouseOver3(){
+						forbuy.style.background = "#38394D";
+						forbuy.style.color = "ghostwhite"
+
+					}
+
+					function mouseOut3(){
+						forbuy.style.background = "#6D6E7A"
+						forbuy.style.color = "ghostwhite"
+					}
+
+					function refreshPage() {
+					    location.reload();
 					}
 
 					// onchange js event
@@ -80,7 +106,5 @@ function Personal (a, b) {
 					}
 
 					function Buy() {
-						window.alert('Your ticket has been sent to you email!')
+						window.alert('Your ticket has been sent to your email!')
 					}
-
-
