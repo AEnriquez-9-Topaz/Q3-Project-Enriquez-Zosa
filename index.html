@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Q3-Project 1</title>
@@ -18,6 +9,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,131 +21,79 @@
 	<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Delius&family=Ephesis&family=Lexend:wght@100..900&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rouge+Script&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+	<!-- Navbar: Enriquez -->
 	<nav class="navbar navbar-expand-sm He cen col-sm-12">
-		<div class="container">
-		    <a class="navbar-brand col-sm-4 font2" href="" style="text-align: left;"><img src="logo.png" alt="logo"  class="limg d-inline-block align-top nega"></a>
+		<div class="container-fluid">
+		    <a class="navbar-brand col-sm-3" href=""><img src="https://i.ibb.co/NnvBgHh/Bites-removebg-preview.png" alt="logo"  class="d-inline-block align-top nega"></a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
 		    	<span class="navbar-toggler-icon"></span>
 		    </button>
 
-		    <div class="collapse navbar-collapse col-sm-4" id="collapsibleNavbar">
-		    	 <ul class="nav nav-pills mx-auto" role="tablist">
-		       		<li class="nav-item mx-2">
-	   					<a class="nav-link" href="index.html" style="background-color: #E0D6BC !important; border-radius: 30px;">Home</a>
+		    <div class="collapse navbar-collapse col-sm-6" id="collapsibleNavbar">
+		    	 <ul class="nav nav-tabs mx-auto" role="tablist">
+		       		<li class="nav-item mx-auto">
+	   							<a class="nav-link" href="index.html" >Home</a>
 	      			</li>
-		       		<li class="nav-item mx-2">
-		         		<a class="nav-link" href="schedule.html" >Transit Schedule</a>
+	      			<li class="nav-item mx-auto">
+	   							<a class="nav-link" href="ticketing.html" >Tickets</a>
+	      			</li>
+		       		<li class="nav-item mx-auto">
+		         			 <a class="nav-link" href="schedule.html" >Transit Schedule</a>
 		        	</li>  
-		       		<li class="nav-item mx-2">
+		       		<li class="nav-item mx-auto">
 		          		<a class="nav-link" href="Contact.html">Contact Us</a>
+		       	 	</li>
+		       	 	<li class="nav-item mx-auto">
+		          		<a class="nav-link" href="help.html">Help</a>
 		       	 	</li>
 		      	</ul>
 		    </div>
 
-		    <div class="wrapper sc col-sm-4" >
+		    <div class="wrapper sc col-sm-3" >
 					<form action="/search" method="get">
-			    	<input type="search"  class="search" placeholder="Search .." name="query">
-			      <button type="submit" class="sub">Submit</button>
+			    	<input type="search"  placeholder="Search.." name="query">
+			      <button type="submit">Submit</button>
 			    </form>
 	  		</div>
 	  	</div>
 	</nav>
-	<br><h1 class="font1">TICKETING CENTER</h1><br>
-
-	<div class="row container mx-auto">
-
-			<div class="Personal col-sm-3 column column_1">
-			   <a href="https://ibb.co/ch4BHttx"><img src="map.png" alt="map" border="0"></a><br /><br><br><a target='_blank' href='https://imgbb.com/' class="sa font2">forum image hosting</a><br />
-			</div>
-
-			<div class="Ticket col-sm-6 column">
-
-				<details> 
-				   <summary class="font2">Ticket Price</summary><br>
-				   <form action="" placeholder="Seats">
-				   		<label class="font"> Leaving From: </label>
-					    <select name="from" id="from" class="col-sm-12 form-control">
-		 			    	<option disabled="true" selected="true" class="cen"> Locations </option>
-		   				   	<option value="Roosevelt">Roosevelt</option>
-		   		 			<option value="Balintawak">Balintawak</option>
-		    				<option value="Monumento">Monumento</option>
-		   				   	<option value="5th Avenue">5th Avenue</option>
-		   		 			<option value="R. Papa">R. Papa</option>
-		    				<option value="Abad Santos">Abad Santos</option>
-		   				   	<option value="Blumentritt">Blumentritt</option>
-		   		 			<option value="Tayuman">Tayuman</option>
-		    				<option value="Bambang">Bambang</option>
-		   				   	<option value="Doroteo Jose">Doroteo Jose</option>
-		   		 			<option value="Carriedo">Carriedo</option>
-		    				<option value="Central Terminal">Central Terminal</option>
-		   				   	<option value="United Nations">United Nations</option>
-		   		 			<option value="Pedro Gil">Pedro Gil</option>
-		    				<option value="Quirino">Quirino</option>
-		   				   	<option value="Vito Cruz">Vito Cruz</option>
-		   		 			<option value="Libertad">Libertad</option>
-		    				<option value="EDSA">EDSA</option>
-		    				<option value="Baclaran">Baclaran</option>
-	  					</select>
-	  					<br />
-	  					<label class="font2"> Going to: </label>
-					    <select name="to" id="to" class="col-sm-12 form-control">
-		 			    	<option disabled="true" selected="true" class="cen"> Going to </option>
-		   				   	<option value="Roosevelt">Roosevelt</option>
-		   		 			<option value="Balintawak">Balintawak</option>
-		    				<option value="Monumento">Monumento</option>
-		   				   	<option value="5th Avenue">5th Avenue</option>
-		   		 			<option value="R. Papa">R. Papa</option>
-		    				<option value="Abad Santos">Abad Santos</option>
-		   				   	<option value="Blumentritt">Blumentritt</option>
-		   		 			<option value="Tayuman">Tayuman</option>
-		    				<option value="Bambang">Bambang</option>
-		   				   	<option value="Doroteo Jose">Doroteo Jose</option>
-		   		 			<option value="Carriedo">Carriedo</option>
-		    				<option value="Central Terminal">Central Terminal</option>
-		   				   	<option value="United Nations">United Nations</option>
-		   		 			<option value="Pedro Gil">Pedro Gil</option>
-		    				<option value="Quirino">Quirino</option>
-		   				   	<option value="Vito Cruz">Vito Cruz</option>
-		   		 			<option value="Libertad">Libertad</option>
-		    				<option value="EDSA">EDSA</option>
-		    				<option value="Baclaran">Baclaran</option>
-	  					</select>
-	  					<br />
-	  					<label> Options: </label>
-					    <select name="option" id="option" class="col-sm-12 form-control">
-		 			    	<option disabled="true" selected="true" class="cen"> Options </option>
-		   				   	<option value="None">None</option>
-		   		 			<option value="Student">Student</option>
-		    				<option value="Patron">Patron</option>
-	  					</select>
- 				   </form>
-				    <br />
-				    <button type="button" id="forprice" onclick="Price()"class="col-auto btn btn-md"onmouseover="mouseOver()" onmouseout="mouseOut()"> Check Price </button>
-				    <button type="button" id="forrefresh" onclick="refreshPage()"class="col-auto btn btn-md"onmouseover="mouseOver2()" onmouseout="mouseOut2()"> Submit another form</button>
-				    <br /> <br />
-				</details>
-			</div>
-
-			<div class="Personal col-sm-2">
-				<div class="tkprc">
-					<h1 class="font1" style="font-size: 40px !important; color:#F2F1EB;">Price : </h1>
-				</div>
-				<div class="column_2">
-					<div class="tkprco">
-						<h6 id="price" class="font2">Please buy a ticket</h6> 
-					</div>
-				</div>
-
-				<div class="sa">
-					<img src="trainticket.png" style="width: 150px; border-radius: 0 !important;">
-				</div>
-
-			</div>
-		</div>	
-
+	<!-- Ticketing: Enriquez -->
+	<div class="hero" id="hero">
+		<img src="https://img.bomboradyo.com/newscenter/2023/08/image-518.png" class="heroimg"> 
+		<br /> <br />
+	</div>
 	<br /><br /><br /><br />
+	<div class="row">
+		<div class="explana col-sm-9">
+			
+			<h1> Welcome to the LRT-1 station </h1>
+			<p class="just"> At LRT-1, we provide a fast, reliable, and affordable way to travel across Metro Manila. Our line runs from Baclaran in Pasay City to Fernando Poe Jr. (Roosevelt) in Quezon City, connecting key business districts, shopping centers, universities, and residential areas. With 20 stations, we make daily commutes easier and more accessible for thousands of passengers.
+			<br /><br />
+			Our stations are strategically located to serve major destinations like EDSA, Gil Puyat, Central Terminal, Monumento, and Balintawak. Whether you're heading to work, school, or a leisure trip, LRT-1 helps you get there faster and more conveniently. We also offer various ticketing options, including stored-value Beep cards, for a smoother and more efficient journey.
+			<br /><br /> 
+			We are committed to improving public transportation, with ongoing upgrades and expansions to serve you better. Travel with us and experience a seamless commute across Metro Manila! </p>
+			<br />
+			<b> Plan your trip with us today! </b> </p>
+		</div>
+		<div class="col-sm-3 full align-items-stretch newsur">
+			<h1 class="cen fil"> <i> Recent News! </i> </h1>
+			<hr /><br />
+			<div class="left">
+				<a href="https://www.lrta.gov.ph/lrta-launches-new-occupational-safety-health-manual-to-enhance-workplace-safety/" class="cemi" target="_blank"> <b> LRTA launches New Occupational Safety & Health Manual to Enhance Workplace Safety </b> </a> 
+				<br /><br />
+				<a href="https://www.lrta.gov.ph/lrta-achieves-certificate-of-compliance-for-foi-program/" class="cemi" target="_blank"> <b> LRTA Achieves Certificate of Compliance for FOI Program</b> </a> 
+				<br /><br />
+				<a href="https://www.msn.com/en-ph/news/other/bayan-muna-urges-gov-t-to-suspend-lrt-1-fare-hike/ar-AA1zzp2j" class="cemi" target="_blank"> <b> Bayan Muna urges gov’t to suspend LRT-1 fare hike</b> </a> 
+				<br /><br />
+				<a href="https://www.msn.com/en-ph/news/other/dizon-open-to-extending-mrt-lrt-operating-hours/ar-AA1zJL3W" class="cemi" target="_blank"> <b> Dizon open to extending MRT, LRT operating hours</b> </a> 
+				<br /><br />
+				<a href="https://www.lrta.gov.ph/csc-awards-cna-certificate-of-registration-to-lrta-employees-association/" class="cemi" target="_blank"> <b> CSC Awards CNA Certificate of Registration to LRTA Employees’ Association</b> </a> 
+				<br /><br /><br /><br />
+			</div>	
+	</div>	
+	<!-- Footer: Enriquez and Zosa -->
 	<div class="footer">
-	<a href="https://github.com/AEnriquez-9-Topaz" class="footertext font2"> <p> <i> 2025 | Alejandro Enriquez & Ivy Zosa | 9-Topaz </i> </p> </a>
+	<a href="https://github.com/AEnriquez-9-Topaz "> <p> <i> 2025 | Alejandro Enriquez & Ivy Zosa | 9-Topaz </i> </p> </a>
 	</div> 
 	<script src="main.js"></script>
 </body>
