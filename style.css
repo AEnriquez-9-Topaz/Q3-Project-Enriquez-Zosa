@@ -13,11 +13,8 @@ html, body {
 		  text-align: center;
 		  background-size: cover;
 		  height: 100%;
-
-}
-
-.cen {
-	text-align: center;
+		  background-repeat: repeat;
+		  background-color: #38394D;
 }
 
 .filler {
@@ -31,23 +28,21 @@ html, body {
 .ctct input {
 	border-radius: 100px !important;
 	border: 0px !important;
-	background-color: #38394D !important;
-	color: #EBEBEB !important;
+	background-color: #EBEBEB !important;
+	color: #38394D !important;
 }
 
 .ctct textarea {
 	border-radius: 100px !important;
 	border: 0px !important;
 	padding-left: 15px;
-	background-color: #38394D !important;
-	color: #EBEBEB !important;
+	background-color: #EBEBEB !important;
+	color: #38394D !important;
 }
 
 .ctct ::placeholder {
-	color: #EBEBEB !important;
+	color: #38394D !important;
 }
-
-
 
 .btnb {
 	margin-right: 10%;
@@ -63,7 +58,7 @@ html, body {
 .spin {
 	position:fixed;
     top:130px;
-    left:80px
+    left:60px
 }
 
 .spin img {
@@ -155,6 +150,10 @@ a.cemi:visited {
 	font-weight: 100;
 }
 
+.cen {
+	text-align: center;
+}
+
 .hero {		
 	size: 100px;
 	height: 300px;
@@ -195,6 +194,7 @@ summary {
 	vertical-align: middle;
 	background-color: #ebebeb;
 	max-height: 90px;
+	height: 80px;
 }
 
 .nav-item {
@@ -233,24 +233,55 @@ summary {
 	color: #38394D !important;
 }
 
-.fortablehead {
-	margin-right: 24% !important;
-	margin-left:24% !important;
-	max-width: 800px !important;
-	padding: 10px;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
-	background-color: #83838D;
+
+.table-container {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 750px !important;
+    background-color: #38394D !important;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.fortablebody {
-	margin-right: 24% !important;
-	margin-left:24% !important;
-	max-width: 800px !important;
-	padding: 10px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+.brtl {
+	border-top-left-radius: 10px !important;
+}
+
+.brtr {
+	border-top-right-radius: 10px !important;
+}
+
+.brbl {
+	border-bottom-left-radius: 10px !important;
+}
+
+.brbr {
+	border-bottom-right-radius: 10px !important;
+}
+
+tr {
 	background-color: #EBEBEB;
+}
+
+thead tr {
+	background-color: #83838D !important;
+}
+
+thead tr th {
+	padding: 10px !important;
+	color: #EBEBEB !important;
+	font-weight: 300;
+	font-family: Lexend;
+}
+
+tbody th, td {
+  font-weight: 200;
+  font-family: Lexend;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .h {
@@ -258,7 +289,7 @@ summary {
 }
 
 .ticketbuy {
-	min-height: calc(100vh - 135px);
+	min-height: calc(100vh - 0px);
     display: flex;
     flex-direction: column;
     justify-content: ;
@@ -288,6 +319,10 @@ img {
 	height: auto;
 	border-radius: 10px;
 }
+.Personal {
+	justify-content: center;
+	text-align: center;
+}
 
 .image {
 	font-family: Lato;
@@ -300,6 +335,8 @@ h1 {
 h3 {
 	font-family: Lato;
 }
+
+
 
 
 .row {
@@ -333,3 +370,4 @@ a:visited {
 	color: ghostwhite;
 	text-decoration: none;
 }
+
