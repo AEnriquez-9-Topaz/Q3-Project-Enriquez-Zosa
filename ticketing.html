@@ -22,9 +22,9 @@
 </head>
 <body>
 	<!-- Navbar: Enriquez -->
-	<nav class="navbar navbar-expand-sm He cen col-sm-12">
+	<nav class="navbar navbar-expand-sm He cen col-sm-12" style="background-color: #83838D !important;">
 		<div class="container-fluid">
-		    <a class="navbar-brand col-sm-3" href=""><img src="https://i.ibb.co/TDPv3Wg9/logo.png" alt="logo"  class="logo d-inline-block align-top nega"></a>
+		    <a class="navbar-brand col-sm-3" href=""><img src="https://i.ibb.co/NdmqrSwn/logo.png" alt="logo"  class="logo d-inline-block align-top nega"></a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
 		    	<span class="navbar-toggler-icon"></span>
 		    </button>
@@ -35,7 +35,7 @@
 	   							<a class="nav-link" href="index.html">Home</a>
 	      			</li>
 	      			<li class="nav-item ">
-	   							<a class="nav-link" href="ticketing.html" style="background-color: #83838D; color:#EBEBEB !important;">Tickets</a>
+	   							<a class="nav-link" href="ticketing.html" style="background-color: #38394D; color:#EBEBEB !important;">Tickets</a>
 	      			</li>
 		       		<li class="nav-item ">
 		         			 <a class="nav-link" href="schedule.html" >Transit Schedule</a>
@@ -52,7 +52,7 @@
 		    <div class="wrapper sc col-sm-3" >
 					<form action="/search" method="get">
 			    	<input type="search" class="search" placeholder=" ⌕" name="query">
-			      <button type="submit" class="btn subtn">Search</button>
+			      <button type="submit" class="btn subtn" style="background-color: #38394D !important;">Search</button>
 			    </form>
 	  		</div>
 	  	</div>
@@ -61,7 +61,7 @@
 
 	<div class="row" style="background-color: #38394D !important; padding-right: 0px !important;">
 		<br>
-			<div class="col-sm-4">
+			<div class="Personal col-sm-4">
 					<br>
 				<div class="spin">
 					<h1 class="animate__animated animate__flip"><img src="https://i.ibb.co/nsWzrSr2/image-2025-03-08-113839902.png" alt="map" border="0"></h1><br>
@@ -70,7 +70,7 @@
 			</div>
 
 			<div class="Ticket ticketbuy col-sm-5 " style="background-color: #EBEBEB;">
-				<h1 style="color: #38394D;"> TICKETING CENTER! </h1><br>
+				<br><h1 style="color: #38394D;"> TICKETING CENTER! </h1><br>
 					<details class="dtl"> 
 					   <summary>Ticket</summary>
 					   		<em> Choose your ticket price </em>
@@ -130,7 +130,7 @@
 		  					<label> Options: </label>
 							    <select name="option" id="option" class="col-sm-12 form-control">
 				 			    	<option disabled="true" selected="true" class="cen"> Discounts </option>
-				   				   	<option value="Regular">Regular</option>
+				   				   	<option value="None">None</option>
 				   		 			<option value="Student">Student</option>
 				    				<option value="Patron">Patron</option>
 			  					</select>
@@ -146,7 +146,7 @@
 			</div>
 
 			<div class="col-sm-3 Ticket ticketbuy ">
-				<h1 style="color: #38394D;"> TICKET PRICE : </h1><br>
+				<br><h1 style="color: #38394D;"> TICKET PRICE : </h1><br>
 				<p id="price" class="tkprc"> <i> !! Please choose a ticket first</i></p> 
 
 					<br>
@@ -154,8 +154,9 @@
 					<br>
 
 				<button type="button" id="forbuy" onclick="Buy()"class="col-auto btn btn-md btnb" onmouseover="mouseOver3()" onmouseout="mouseOut3()"> Buy ticket</button>
-					<br><br><br><br>
+
 			</div>
+
 	</div>
 
 	<!-- Footer: Enriquez and Zosa -->
