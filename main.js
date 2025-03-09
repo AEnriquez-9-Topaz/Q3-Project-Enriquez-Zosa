@@ -1,18 +1,43 @@
-// Enriquez
 function Personal (a, b) {
 						var a = document.getElementById('fullname').value;
 						window.alert ('We have accepted your submission, ' +  a + '!')
 					}
 
 					function mouseOver(){
-						buy.style.background = "#C1121F";
-						buy.sytle.color = "ghostwhite"
+						forprice.style.background = "#38394D";
+						forprice.style.color = "ghostwhite"
 
 					}
 
 					function mouseOut(){
-						buy.style.background = "#FFB703"
-						buy.style.color = "black"
+						forprice.style.background = "#6D6E7A"
+						forprice.style.color = "ghostwhite"
+					}
+
+					function mouseOver2(){
+						forrefresh.style.background = "#38394D";
+						forrefresh.style.color = "ghostwhite"
+
+					}
+
+					function mouseOut2(){
+						forrefresh.style.background = "#6D6E7A"
+						forrefresh.style.color = "ghostwhite"
+					}
+
+					function mouseOver3(){
+						forbuy.style.background = "#38394D";
+						forbuy.style.color = "ghostwhite"
+
+					}
+
+					function mouseOut3(){
+						forbuy.style.background = "#6D6E7A"
+						forbuy.style.color = "ghostwhite"
+					}
+
+					function refreshPage() {
+					    location.reload();
 					}
 
 					// onchange js event
@@ -76,20 +101,12 @@ function Personal (a, b) {
 
 						var ans = Math.abs(Km1-Km2) * 3 * Discount
 						var r_ans =ans.toFixed(2)
-						document.getElementById('price').innerHTML=r_ans + ' Pesos' 
-
-						if (r_ans>0.1) {document.getElementById('price').innerHTML=r_ans + ' Pesos'}
-
-						else {document.getElementById('price').innerHTML='Please buy a valid ticket'}	
+						document.getElementById('price').innerHTML=r_ans + ' Pesos' 	
 
 					}
 
 					function Buy() {
-
-						window.alert('Your ticket has been sent to your email!')
+						window.alert('Your ticket has been sent to your email!');
+						location.reload();
 					}
 
-					
-
-
-						
