@@ -1,3 +1,4 @@
+// Zosa and Enriquez
 function Personal(a, b) {
 						var a = document.getElementById('fullname').value;
 						window.alert ('We have accepted your submission, ' + a + '!')
