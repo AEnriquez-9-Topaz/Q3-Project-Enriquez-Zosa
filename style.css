@@ -1,3 +1,4 @@
+
 /*Zosa*/
  {
 		margin: 0px;
@@ -102,7 +103,7 @@ html, body {
 }
 
 .subtn {
-	background-color: #38394D !important;
+	background-color: #83838D !important;
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
 	color: #EBEBEB !important;
@@ -134,18 +135,21 @@ html, body {
 	font-weight: 300;
 }
 
+.jus {
+	text-align: justify;
+}
 
 hr {
 	border: none;
 }
 
 a.cemi:link { 
-	color: rgb(56, 57, 77);
+	color: rgb(56, 57, 77, 0.6);
 	font-family: Lexend;
 	font-weight: 100;
 }
 a.cemi:visited { 
-	color:  #727494; 
+	color:  #F9D43B; 
 	font-family: Lexend;
 	font-weight: 100;
 }
@@ -192,7 +196,7 @@ summary {
 .He {
 	padding-bottom: 10px;
 	vertical-align: middle;
-	background-color: #83838D;
+	background-color: #ebebeb;
 	max-height: 90px;
 	height: 80px;
 }
