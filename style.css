@@ -150,13 +150,13 @@ hr {
 }
 
 a.cemi:link { 
-	color: #301934;
+	color: rgb(56, 57, 77);
 	font-family: Lexend;
 	font-weight: 100;
 	text-decoration: underline;
 }
 a.cemi:visited { 
-	color: #301934; 
+	color: rgb(56, 57, 77); 
 	font-family: Lexend;
 	font-weight: 100;
 	text-decoration: underline;
