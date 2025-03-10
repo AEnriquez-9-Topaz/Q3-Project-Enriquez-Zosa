@@ -102,7 +102,7 @@ html, body {
 }
 
 .subtn {
-	background-color: #83838D !important;
+	background-color: #38394D !important;
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
 	color: #EBEBEB !important;
@@ -140,12 +140,12 @@ hr {
 }
 
 a.cemi:link { 
-	color: rgb(56, 57, 77, 0.6);
+	color: rgb(56, 57, 77);
 	font-family: Lexend;
 	font-weight: 100;
 }
 a.cemi:visited { 
-	color:  #F9D43B; 
+	color:  #727494; 
 	font-family: Lexend;
 	font-weight: 100;
 }
@@ -192,7 +192,7 @@ summary {
 .He {
 	padding-bottom: 10px;
 	vertical-align: middle;
-	background-color: #ebebeb;
+	background-color: #83838D;
 	max-height: 90px;
 	height: 80px;
 }
