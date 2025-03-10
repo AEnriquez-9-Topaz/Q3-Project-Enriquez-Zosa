@@ -1,4 +1,3 @@
-
 /*Zosa*/
  {
 		margin: 0px;
@@ -16,6 +15,12 @@ html, body {
 		  height: 100%;
 		  background-repeat: repeat;
 		  background-color: #38394D;
+}
+
+.st {
+	font-size: 14px;
+	font-family: Lexend;
+	font-weight: 300;
 }
 
 .filler {
@@ -57,13 +62,12 @@ html, body {
 }
 
 .spin {
-	position:fixed;
-    top:130px;
-    left:60px
+	text-align: center;
 }
 
 .spin img {
-	height: 450px;
+	height: 100%;
+	width: 100%;
 }
 
 .row {
@@ -103,7 +107,7 @@ html, body {
 }
 
 .subtn {
-	background-color: #83838D !important;
+	background-color: #38394D !important;
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
 	color: #EBEBEB !important;
@@ -135,27 +139,30 @@ html, body {
 	font-weight: 300;
 }
 
-.jus {
-	text-align: justify;
-}
 
 hr {
 	border: none;
 }
 
 a.cemi:link { 
-	color: rgb(56, 57, 77, 0.6);
+	color: #EBEBEB;
 	font-family: Lexend;
 	font-weight: 100;
+	text-decoration: underline;
 }
 a.cemi:visited { 
-	color:  #F9D43B; 
+	color: #0A1117; 
 	font-family: Lexend;
 	font-weight: 100;
+	text-decoration: underline;
 }
 
 .cen {
 	text-align: center;
+}
+
+.tc {
+	margin-bottom: 10%;
 }
 
 .hero {		
@@ -196,7 +203,7 @@ summary {
 .He {
 	padding-bottom: 10px;
 	vertical-align: middle;
-	background-color: #ebebeb;
+	background-color: #83838D;
 	max-height: 90px;
 	height: 80px;
 }
@@ -242,7 +249,7 @@ summary {
 	display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 750px !important;
+    max-width: 900px !important;
     background-color: #38394D !important;
     border-radius: 10px;
     padding: 10px;
@@ -286,6 +293,10 @@ tbody th, td {
   padding-right: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+table {
+	width: 900px;
 }
 
 .h {
