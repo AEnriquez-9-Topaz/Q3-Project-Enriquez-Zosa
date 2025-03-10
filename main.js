@@ -1,45 +1,19 @@
-function Personal(a, b) {
+// Enriquez
+function Personal (a, b) {
 						var a = document.getElementById('fullname').value;
-						window.alert ('We have accepted your submission, ' + a + '!')
+						window.alert ('We have accepted your submission, ' +  a + '!')
 					}
 
 					function mouseOver(){
-						forprice.style.background = "#38394D";
-						forprice.style.color = "ghostwhite"
+						buy.style.background = "#C1121F";
+						buy.sytle.color = "ghostwhite"
 
 					}
 
 					function mouseOut(){
-						forprice.style.background = "#6D6E7A"
-						forprice.style.color = "ghostwhite"
+						buy.style.background = "#FFB703"
+						buy.style.color = "black"
 					}
-
-					function mouseOver2(){
-						forrefresh.style.background = "#38394D";
-						forrefresh.style.color = "ghostwhite"
-
-					}
-
-					function mouseOut2(){
-						forrefresh.style.background = "#6D6E7A"
-						forrefresh.style.color = "ghostwhite"
-					}
-
-					function mouseOver3(){
-						forbuy.style.background = "#38394D";
-						forbuy.style.color = "ghostwhite"
-
-					}
-
-					function mouseOut3(){
-						forbuy.style.background = "#6D6E7A"
-						forbuy.style.color = "ghostwhite"
-					}
-
-					function refreshPage() {
-					    location.reload();
-					}
-
 
 					// onchange js event
 					document.getElementById("fullname").onchange = function() {ChangeToCapital()}
@@ -102,13 +76,20 @@ function Personal(a, b) {
 
 						var ans = Math.abs(Km1-Km2) * 3 * Discount
 						var r_ans =ans.toFixed(2)
-						document.getElementById('price').innerHTML=r_ans + ' Pesos' 	
+						document.getElementById('price').innerHTML=r_ans + ' Pesos' 
+
+						if (r_ans>0.1) {document.getElementById('price').innerHTML=r_ans + ' Pesos'}
+
+						else {document.getElementById('price').innerHTML='Please buy a valid ticket'}	
 
 					}
 
 					function Buy() {
-						window.alert('Your ticket has been sent to your email!');
-						location.reload();
+
+						window.alert('Your ticket has been sent to your email!')
 					}
 
+					
 
+
+						
