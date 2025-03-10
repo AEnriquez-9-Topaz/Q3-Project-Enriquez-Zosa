@@ -20,7 +20,12 @@ html, body {
 .st {
 	font-size: 14px;
 	font-family: Lexend;
-	font-weight: 300;
+	font-weight: 300;'
+	color: #EBEBEB !important;
+}
+
+.ct {
+	color: #D9D9DA !important;
 }
 
 .filler {
@@ -151,7 +156,7 @@ a.cemi:link {
 	text-decoration: underline;
 }
 a.cemi:visited { 
-	color: #0A1117; 
+	color: #B8B8BD; 
 	font-family: Lexend;
 	font-weight: 100;
 	text-decoration: underline;
@@ -297,6 +302,10 @@ tbody th, td {
 
 table {
 	width: 900px;
+}
+
+tr:nth-child(even) {
+	background-color: #BFBFBF;
 }
 
 .h {
