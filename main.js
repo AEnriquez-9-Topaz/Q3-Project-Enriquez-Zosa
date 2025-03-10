@@ -1,6 +1,6 @@
-function Personal (a, b) {
+function Personal(a, b) {
 						var a = document.getElementById('fullname').value;
-						window.alert ('We have accepted your submission, ' +  a + '!')
+						window.alert ('We have accepted your submission, ' + a + '!')
 					}
 
 					function mouseOver(){
@@ -39,6 +39,7 @@ function Personal (a, b) {
 					function refreshPage() {
 					    location.reload();
 					}
+
 
 					// onchange js event
 					document.getElementById("fullname").onchange = function() {ChangeToCapital()}
@@ -109,4 +110,5 @@ function Personal (a, b) {
 						window.alert('Your ticket has been sent to your email!');
 						location.reload();
 					}
+
 
