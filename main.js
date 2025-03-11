@@ -1,7 +1,7 @@
 // Zosa and Enriquez
 function Personal(a, b) {
-						var a = document.getElementById('fullname').value;
-						window.alert ('We have accepted your submission, ' + a + '!')
+					var a = document.getElementById('fullname').value;
+					window.alert ('We have accepted your submission, ' + a + '!')
 					}
 
 					function mouseOver(){
@@ -106,8 +106,8 @@ function Personal(a, b) {
 						document.getElementById('price').innerHTML=r_ans + ' Pesos'
 
 						if (r_ans>0.1) {document.getElementById('price').innerHTML=r_ans + ' Pesos'}
-
-                        else {document.getElementById('price').innerHTML='Please buy a valid ticket'} 	
+		
+                        			else {document.getElementById('price').innerHTML='Please buy a valid ticket'} 	
 
 					}
 
