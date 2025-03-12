@@ -60,7 +60,6 @@ function Personal(a, b) {
 						if (f === "5th Avenue") {Km1 = 17.7;}
 						if (f === "R. Papa") {Km1 = 16.4;}
 						if (f === "Abad Santos") {Km1 = 15;}
-						if (f === "5th Avenue") {Km1 = 14.1;}
 						if (f === "Blumentritt") {Km1 = 12.9;}
 						if (f === "Tayuman") {Km1 = 12;}
 						if (f === "Bambang") {Km1 = 11.4;}
@@ -81,7 +80,6 @@ function Personal(a, b) {
 						if (t === "5th Avenue") {Km2 = 17.7;}
 						if (t === "R. Papa") {Km2 = 16.4;}
 						if (t === "Abad Santos") {Km2 = 15;}
-						if (t === "5th Avenue") {Km2 = 14.1;}
 						if (t === "Blumentritt") {Km2 = 12.9;}
 						if (t === "Tayuman") {Km2 = 12;}
 						if (t === "Bambang") {Km2 = 11.4;}
